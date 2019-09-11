@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PeopleRepository.Interface\PeopleRepository.Interface.csproj" />
+    <ProjectReference Include="..\PluginLoader\PluginLoader.csproj" />
   </ItemGroup>
 
 </Project>

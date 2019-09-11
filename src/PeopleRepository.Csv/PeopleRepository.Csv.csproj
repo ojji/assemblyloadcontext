@@ -5,9 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PeopleRepository.Interface\PeopleRepository.Interface.csproj">
-      <Private>false</Private>
-    </ProjectReference>
+    <ProjectReference Include="..\PeopleRepository.Interface\PeopleRepository.Interface.csproj" />
   </ItemGroup>
 
 </Project>

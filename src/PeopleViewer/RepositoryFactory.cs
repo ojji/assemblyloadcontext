@@ -2,7 +2,6 @@
 using System.Collections.Specialized;
 using System.Configuration;
 using System.Linq;
-using System.Reflection;
 using PeopleRepository.Interface;
 
 namespace PeopleViewer
@@ -22,10 +21,9 @@ namespace PeopleViewer
             string repositoryTypeParam = repositorySettings["RepositoryTypeParam"];
 
             string typeNameWithoutAssembly = typeName.Split(',', StringSplitOptions.RemoveEmptyEntries).ToArray()[0].Trim();
-            string assemblyName = typeName.Split(',', StringSplitOptions.RemoveEmptyEntries).ToArray()[1].Trim();
 
-            var pluginLoader = new PluginLoader(pluginPath);
-            var assembly = pluginLoader.LoadFromAssemblyName(new AssemblyName(assemblyName));
+            var pluginLoader = PluginLoader.PluginLoader.CreateLoader(pluginPath, new[] {typeof(IPeopleRepository)});
+            var assembly = pluginLoader.LoadPlugin();
             
             var type = assembly.GetType(typeNameWithoutAssembly, true);
 
