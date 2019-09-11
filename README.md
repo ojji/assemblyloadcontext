@@ -1,6 +1,6 @@
 # AssemblyLoadContext usage sample
 
-This sample project shows how to use the .NET Core `System.Runtime.Loader.AssemblyLoadContext` class in conjunction with the new .NET Core 3.0 class `System.Runtime.Loader.AssemblyDependencyResolver`
+This sample project shows how to use the .NET Core `System.Runtime.Loader.AssemblyLoadContext` class in conjunction with the new .NET Core 3.0 class `System.Runtime.Loader.AssemblyDependencyResolver` to solve a simple plugin loading scenario in .NET Core 3
 
 # Overview
 The sample project `PeopleViewer` gets data from a plugin loaded at runtime. The plugins implement the interface `IPeopleRepository` from the common referenced project `PeopleRepository.Interface` and the configuration is done in the `App.config` file.
@@ -27,3 +27,8 @@ var assembly = pluginLoader.LoadPlugin();
 var type = assembly.GetType("PeopleRepository.Csv.CsvRepository", true);
 return Activator.CreateInstance(type, new object[] {}) as IPeopleRepository;
 ```
+  
+# More to read
+[Dependency loading in .NET Core](https://docs.microsoft.com/en-us/dotnet/core/dependency-loading/overview)
+[AssemblyDependencyResolver Class](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.loader.assemblydependencyresolver?view=netcore-3.0)
+[AssemblyLoadContext Class](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.loader.assemblyloadcontext?view=netcore-3.0)
