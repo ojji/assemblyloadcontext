@@ -1,0 +1,21 @@
+syntax = "proto3";
+import "google/protobuf/Timestamp.proto";
+
+option csharp_namespace = "People.Service";
+
+package PeopleService;
+
+service PeopleService {
+	rpc GetPeople(GetPeopleRequest) returns (GetPeopleResponse) {}
+}
+
+message GetPeopleRequest {}
+message Person {
+	string firstName = 1;
+	string lastName = 2;
+	google.protobuf.Timestamp startDate = 3;
+	int32 rating = 4;
+}
+message GetPeopleResponse {
+	repeated Person people = 1;
+}
