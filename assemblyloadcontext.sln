@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeopleRepository.Csv", "src
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PluginLoader", "src\PluginLoader\PluginLoader.csproj", "{5CFB023E-240F-409A-8289-9DDBCD607C34}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "People.Service", "src\People.Service\People.Service.csproj", "{F2CA9288-5237-4976-B322-546BEDCC3D59}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +73,18 @@ Global
 		{5CFB023E-240F-409A-8289-9DDBCD607C34}.Release|x64.Build.0 = Release|Any CPU
 		{5CFB023E-240F-409A-8289-9DDBCD607C34}.Release|x86.ActiveCfg = Release|Any CPU
 		{5CFB023E-240F-409A-8289-9DDBCD607C34}.Release|x86.Build.0 = Release|Any CPU
+		{F2CA9288-5237-4976-B322-546BEDCC3D59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2CA9288-5237-4976-B322-546BEDCC3D59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2CA9288-5237-4976-B322-546BEDCC3D59}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F2CA9288-5237-4976-B322-546BEDCC3D59}.Debug|x64.Build.0 = Debug|Any CPU
+		{F2CA9288-5237-4976-B322-546BEDCC3D59}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F2CA9288-5237-4976-B322-546BEDCC3D59}.Debug|x86.Build.0 = Debug|Any CPU
+		{F2CA9288-5237-4976-B322-546BEDCC3D59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2CA9288-5237-4976-B322-546BEDCC3D59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2CA9288-5237-4976-B322-546BEDCC3D59}.Release|x64.ActiveCfg = Release|Any CPU
+		{F2CA9288-5237-4976-B322-546BEDCC3D59}.Release|x64.Build.0 = Release|Any CPU
+		{F2CA9288-5237-4976-B322-546BEDCC3D59}.Release|x86.ActiveCfg = Release|Any CPU
+		{F2CA9288-5237-4976-B322-546BEDCC3D59}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -80,6 +94,7 @@ Global
 		{98F9E0CA-8E94-4254-9696-080F4DC607E1} = {62DBA225-3C0B-4A88-9852-C6BDACA0CD8F}
 		{6258A896-D680-4313-87D7-89FCCF9925A5} = {62DBA225-3C0B-4A88-9852-C6BDACA0CD8F}
 		{5CFB023E-240F-409A-8289-9DDBCD607C34} = {62DBA225-3C0B-4A88-9852-C6BDACA0CD8F}
+		{F2CA9288-5237-4976-B322-546BEDCC3D59} = {62DBA225-3C0B-4A88-9852-C6BDACA0CD8F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A4E0162F-8E08-4872-BEB0-151B23F14731}
