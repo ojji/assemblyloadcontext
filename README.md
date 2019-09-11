@@ -30,5 +30,7 @@ return Activator.CreateInstance(type, new object[] {}) as IPeopleRepository;
   
 # More to read
 [Dependency loading in .NET Core](https://docs.microsoft.com/en-us/dotnet/core/dependency-loading/overview)
+
 [AssemblyDependencyResolver Class](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.loader.assemblydependencyresolver?view=netcore-3.0)
+
 [AssemblyLoadContext Class](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.loader.assemblyloadcontext?view=netcore-3.0)
