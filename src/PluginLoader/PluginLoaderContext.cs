@@ -21,12 +21,12 @@ namespace PluginLoader
 
         private void AddToDefaultLoadedAssemblies(AssemblyName sharedAssembly)
         {
-            if (_defaultLoadedAssemblies.Contains(sharedAssembly.FullName))
+            if (_defaultLoadedAssemblies.Contains(sharedAssembly.Name))
             {
                 return;
             }
 
-            _defaultLoadedAssemblies.Add(sharedAssembly.FullName);
+            _defaultLoadedAssemblies.Add(sharedAssembly.Name);
 
             var assembly = AssemblyLoadContext.Default.LoadFromAssemblyName(sharedAssembly);
             foreach (var referencedAssembly in assembly.GetReferencedAssemblies())
@@ -37,7 +37,7 @@ namespace PluginLoader
 
         protected override Assembly Load(AssemblyName assemblyName)
         {
-            if (_defaultLoadedAssemblies.Contains(assemblyName.FullName))
+            if (_defaultLoadedAssemblies.Contains(assemblyName.Name))
             {
                 if (Default.LoadFromAssemblyName(assemblyName) != null)
                 {
