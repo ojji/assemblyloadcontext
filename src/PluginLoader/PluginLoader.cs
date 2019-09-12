@@ -44,5 +44,20 @@ namespace PluginLoader
         {
             return _context.LoadFromAssemblyPath(_config.PluginPath);
         }
+
+        public Assembly LoadAssembly(AssemblyName assemblyName)
+        {
+            return _context.LoadFromAssemblyName(assemblyName);
+        }
+
+        public Assembly LoadAssembly(string assemblyName)
+        {
+            return LoadAssembly(new AssemblyName(assemblyName));
+        }
+
+        public Assembly LoadAssemblyFromPath(string assemblyPath)
+        {
+            return _context.LoadFromAssemblyPath(assemblyPath);
+        }
     }
 }
